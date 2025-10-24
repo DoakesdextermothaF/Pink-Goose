@@ -270,7 +270,7 @@ body {
 
 .project-launched-container {
   position: absolute;
-  bottom: 0;
+  bottom: 50px;
   left: 275px;
   right: 275px;
   padding: 10px 10px;
@@ -293,6 +293,12 @@ body {
   align-items: center;
   justify-content: center;
   margin-top: 60px;
+}
+
+.stars-1 {
+position: absolute;
+left: 900px;
+top: 1737px;
 }
 
 .title-text-row {
@@ -327,7 +333,6 @@ body {
   color: white;
 }
 
-
 .logos-row-container {
   display: flex;
   justify-content: center;
@@ -337,13 +342,11 @@ body {
   flex-wrap: wrap;
 }
 
-
 .logo-item {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 
 .logo-img {
   width: 80px;
@@ -354,7 +357,6 @@ body {
   border: 2px solid #2A3744;
   object-fit: contain;
 }
-
 
 .logo-text {
   margin-top: 12px;
@@ -433,7 +435,8 @@ body {
 .weekly-title {
 font-family: 'Montserrat';
   color: #E5E5E5;
-  margin-bottom: 20px;    margin-top: 4%;
+  margin-bottom: 20px;
+  margin-top: 4%;
 }
 
 .weekly-subtitle {
@@ -445,9 +448,11 @@ font-family: 'Montserrat';
 .email-container {
   display: flex;
   justify-content: center;
-  align-items: space-around;
+  align-items: center;
+  gap: 12px;
   margin-bottom: 20px;
 }
+
 
 .email-text {
   font-family: 'Montserrat';
@@ -455,10 +460,14 @@ font-family: 'Montserrat';
   background-color: #121E28;
   border: 2px solid #2A3744;
   border-radius: 16px;
-  padding: 16px 40px;
+  padding: 16px 260px 16px 20px;
+  text-align: left;
 }
 
 .subscribe-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 16px;
   padding: 16px 23px;
   border: 30px;
@@ -467,23 +476,251 @@ font-family: 'Montserrat';
   text-align: center;
   color: #10151A;
   background-color: #b995e0;
+  cursor: pointer;
 }
 
+/* --- Main Press container --- */
 .press-container {
-  max-width: 1140px;
+  max-width: 815px;
   margin: 80px auto;
-  text-align: center;
+  padding: 0 20px;
+  font-family: 'Montserrat';
 }
 
+.star-5-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* --- Title & 'See all' header --- */
 .press-title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.press-title {
+  font-size: 30px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.see-all {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #A1A1A1;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.see-all:hover {
+  color: #E5E5E5;
+}
+
+/* --- Articles container --- */
+.press-articles-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  flex-wrap: nowrap;
+}
+
+/* ---press boxes--- */
+.decrypt-box,
+.blockworks-box,
+.techcrunch-box {
+  border-radius: 18px;
+  padding: 22px 18px;
+  width: 230px; 
+  color: #10151A;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 245px;
+  box-sizing: border-box;
+}
+
+/* --- Background colors --- */
+.decrypt-box {
+  background-color: #5CE1E6;
+}
+
+.blockworks-box {
+  background-color: #CBA8FF;
+}
+
+.techcrunch-box {
+  background-color: #E9F86C; 
+}
+
+/* --- Logos --- */
+.decrypt-box img,
+.blockworks-box img,
+.techcrunch-box img {
+  width: 85px;
+  margin-bottom: 12px;
+}
+
+/* --- Titles & text --- */
+.decrypt-text,
+.blockworks-text,
+.techcrunch-text {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 6px; 
+  line-height: 1.35;
+}
+
+.decrypt-subtext,
+.blockworks-subtext,
+.techcrunch-subtext {
+  font-size: 12.5px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #1A1A1A;
+  margin-bottom: 14px;
+}
+
+.read {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #10151A;
+  cursor: pointer;
+}
+
+.read img {
+  width: 10px;
+}
+
+/* --- Main Podcast container --- */
+
+.podcast-container {
+  max-width: 815px;
+  margin: 80px auto;
+  padding: 0 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.star-3-container {
+  display: flex;
+  justify-content: flex-start; 
+}
+
+/* --- Title --- */
+.podcast-title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.podcast-title {
+  font-size: 30px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.see-all {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #A1A1A1;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.see-all:hover {
+  color: #E5E5E5;
+}
+
+/* --- Podcasts container --- */
+.podcasts-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  flex-wrap: nowrap;
+}
+
+/* --- podcast boxes --- */
+.pomppodcast-box,
+.the-unstoppable-box,
+.zimared-box {
+  border-radius: 18px;
+  padding: 22px 18px;
+  width: 230px; 
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 245px;
+  box-sizing: border-box;
+  background-color: #121E28;
+  border: 2px solid #2A3744;
+}
+
+/* --- Podcast images --- */
+.pomppodcast-box img,
+.the-unstoppable-box img,
+.zimared-box img {
+  width: 50px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+}
+
+/* --- Titles --- */
+.pomppodcast-text,
+.the-unstoppable-text,
+.zimared-text {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 6px; 
+  line-height: 1.35;
+  color: #FFFFFF;
+}
+
+/* --- Subtext --- */
+.pomppodcast-subtext,
+.the-unstoppable-subtext,
+.zimared-subtext {
+  font-size: 12.5px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #A1A1A1;
+  margin-bottom: 14px;
+}
+
+
+.listen,
+.watch {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #ffffff; 
+  cursor: pointer;
+}
+
+.listen,
+.watch {
+  width: 10px;
+}
+
+/* --- groupstars container --- */
+.group-stars-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
-  margin-bottom: 40px;
+  margin-top: 40px;
 }
 
-.Press-title {
-  font-family: 'Montserrat';
-  color: #E5E5E5;
-}
+/* --- end banner --- */
