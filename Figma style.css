@@ -9,7 +9,6 @@ body {
   background-color: rgba(26, 40, 56, 1);
 }
 
-/* --- Header section --- */
 .header {
   width: 100%;
   background-color: rgba(26, 40, 56, 1);
@@ -18,7 +17,7 @@ body {
 
 .header-container {
   max-width: 1140px;
-  margin: 0 auto;
+  margin: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -58,6 +57,7 @@ body {
   line-height: 24px;
 }
 
+/* "border: none;" word gebruikt op van een regel de rand vewijderen zo dat er geen rand in de button.*/
 .login-button {
   background-color: #243241;
   color: #FFFFFF;
@@ -69,7 +69,6 @@ body {
   line-height: 22px;
 }
 
-/* --- main banner section --- */
 .main-banner {
   width: 100%;
   padding: 120px 20px;
@@ -138,14 +137,12 @@ body {
   align-content: stretch;
 }
 
-/* --- row section --- */
 .ready-row {
   max-width: 1140px;
   margin: 40px auto;
   position: relative;
   height: auto;
 }
-
 
 .ready-project-text {
   font-family: 'montserrat';
@@ -236,7 +233,6 @@ body {
   border: 30px;
 }
 
-/* --- three stars section --- */
 .three-stars-container {
   display: flex;
   justify-content: center;
@@ -252,7 +248,7 @@ body {
   align-items: baseline;
   align-content: stretch;
 }
- /* --- game box section --- */
+
 .gamebox-container {
   width: 70%;
   padding: 60px 20px;
@@ -287,10 +283,9 @@ body {
 
 .project-launched-text {
   margin: 0;
-  color: rgb(0, 0, 0);
+  color: black;
 }
 
-/* --- text row section --- */
 .text-row-container {
   display: flex;
   flex-direction: column;
@@ -337,7 +332,6 @@ top: 1737px;
   color: white;
 }
 
-/* --- logo row section --- */
 .logos-row-container {
   display: flex;
   justify-content: center;
@@ -360,7 +354,6 @@ top: 1737px;
   background-color: #131F2B;
   border-radius: 20px;
   border: 2px solid #2A3744;
-  object-fit: contain;
 }
 
 .logo-text {
@@ -371,7 +364,6 @@ top: 1737px;
   text-align: center;
 }
 
-/* --- team section --- */
 .team-container {
   max-width: 1140px;
   margin: 80px;
@@ -428,7 +420,6 @@ top: 1737px;
   color: white;
 }
 
-/* --- weekly section --- */
 .weekly-container {
   background: #121E28;
   border: 2px solid #2A3744;
@@ -459,7 +450,6 @@ font-family: 'Montserrat';
   margin-bottom: 20px;
 }
 
-
 .email-text {
   font-family: 'Montserrat';
   color: #3D4C5B;
@@ -485,7 +475,6 @@ font-family: 'Montserrat';
   cursor: pointer;
 }
 
-/* --- Main Press section --- */
 .press-container {
   max-width: 815px;
   margin: 80px auto;
@@ -526,7 +515,6 @@ font-family: 'Montserrat';
   color: #E5E5E5;
 }
 
-/* --- Articles container --- */
 .press-articles-container {
   display: flex;
   justify-content: space-between;
@@ -534,7 +522,6 @@ font-family: 'Montserrat';
   flex-wrap: nowrap;
 }
 
-/* ---press boxes--- */
 .decrypt-box,
 .blockworks-box,
 .techcrunch-box {
@@ -549,7 +536,6 @@ font-family: 'Montserrat';
   box-sizing: border-box;
 }
 
-/* --- Background colors --- */
 .decrypt-box {
   background-color: #5CE1E6;
 }
@@ -562,7 +548,6 @@ font-family: 'Montserrat';
   background-color: #E9F86C; 
 }
 
-/* --- Logos --- */
 .decrypt-box img,
 .blockworks-box img,
 .techcrunch-box img {
@@ -570,7 +555,6 @@ font-family: 'Montserrat';
   margin-bottom: 12px;
 }
 
-/* --- Titles & text --- */
 .decrypt-text,
 .blockworks-text,
 .techcrunch-text {
@@ -603,8 +587,6 @@ font-family: 'Montserrat';
 .read img {
   width: 10px;
 }
-
-/* --- Podcast section --- */
 
 .podcast-container {
   max-width: 815px;
@@ -639,14 +621,12 @@ font-family: 'Montserrat';
   font-weight: 500;
   color: #A1A1A1;
   cursor: pointer;
-  transition: color 0.3s ease;
 }
 
 .see-all:hover {
   color: #E5E5E5;
 }
 
-/* --- Podcasts boxes section --- */
 .podcasts-container {
   display: flex;
   justify-content: space-between;
@@ -654,7 +634,6 @@ font-family: 'Montserrat';
   flex-wrap: nowrap;
 }
 
-/* --- podcast boxes --- */
 .pomppodcast-box,
 .the-unstoppable-box,
 .zimared-box {
@@ -665,13 +644,10 @@ font-family: 'Montserrat';
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  min-height: 245px;
-  box-sizing: border-box;
   background-color: #121E28;
   border: 2px solid #2A3744;
 }
 
-/* --- Podcast images --- */
 .pomppodcast-box img,
 .the-unstoppable-box img,
 .zimared-box img {
@@ -680,7 +656,6 @@ font-family: 'Montserrat';
   border-radius: 8px;
 }
 
-/* --- Titles --- */
 .pomppodcast-text,
 .the-unstoppable-text,
 .zimared-text {
@@ -691,7 +666,6 @@ font-family: 'Montserrat';
   color: #FFFFFF;
 }
 
-/* --- podcast Subtext --- */
 .pomppodcast-subtext,
 .the-unstoppable-subtext,
 .zimared-subtext {
@@ -761,7 +735,7 @@ font-family: 'Montserrat';
 
 .telegram-box,
 .email-box {
-display: flex;
+  display: flex;
   align-items: center;
   gap: 12px;
   border-radius: 12px;
@@ -821,7 +795,7 @@ display: flex;
 
 .footer-container {
   max-width: 1140px;
-  margin: 0 auto;
+  margin: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -835,26 +809,19 @@ display: flex;
   transform: translateX(-50%);
 }
 
-.nav ul {
-  list-style: none;
-  display: flex;
+.nav {
   gap: 40px;
   margin: 0;
   padding: 0;
-}
-
-.nav {
-  text-decoration: none;
   font-size: 16px;
   font-weight: 500;
   color: #ffffff;
-  transition: color 0.3s ease;
 }
 
+/*".nav .legal" is om de woord legal in de footer de kleur veranderen naar het gekozen kleur.*/
 .nav .legal {
   color: #FFC803;
 }
-
 
 .footer-icons {
   position: absolute;
@@ -863,6 +830,7 @@ display: flex;
   gap: 16px;
 }
 
+/* img achter de class houd in dat de photo formaat word veranderd in het CSS.*/
 .footer-icons img {
   width: 32px;
   height: 32px;
@@ -892,7 +860,6 @@ display: flex;
   margin-bottom: 30px;
 }
 
-/* --- Heroes boxes --- */
 .john-box, 
 .jane-box, 
 .Hans-box {
@@ -909,7 +876,6 @@ display: flex;
   text-align: center;
 }
 
-/* --- Images --- */
 .john-box img,
 .jane-box img,
 .Hans-box img {
@@ -969,6 +935,7 @@ display: flex;
   text-align: center;
 }
 
+/*.post-container input/textarea/select geeft aan waar de gebruijker kan in de tekst rtpen en kiezen.*/
 .post-container input,
 .post-container textarea,
 .post-container select {
@@ -981,12 +948,10 @@ display: flex;
   border-radius: 10px;
   padding: 25px 16px;
   margin-bottom: 20px;
-
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-
 
 .post-container input::placeholder,
 .post-container textarea::placeholder {
