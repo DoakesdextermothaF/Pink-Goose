@@ -13,22 +13,92 @@
 <body>
   <header class="header">
     <div class="header-container">
-    <div class="logo">
+      <div class="logo">
         <span class="logo-white">Pink</span>
         <span class="logo-pink">Goose</span>
+      </div>
+
+      <nav class="nav">
+        <ul>
+          <li><a href="Figma index.html">Home</a></li>
+          <li><a href="Learn index.html">Learn</a></li>
+          <li><a href="About index.html">About</a></li>
+          <li><a href="Contact index.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="login-button">Login</button>
     </div>
-
-<nav class="nav">
-  <ul>
-    <li><a href="Figma index.html">Home</a></li>
-    <li><a href="Learn index.html">Learn</a></li>
-    <li><a href="About index.html">About</a></li>
-    <li><a href="Contact index.html">Contact</a></li>
-  </ul>
-</nav>
-
-  <button class="login-button">Login</button>
-  </div>
   </header>
 </body>
+
+<main>
+  <div class="end-banner-container">
+    <div class="end-banner-text">
+      <h1 class="end-banner-title">What's your GOOSE idea?</h1>
+      <h2 class="end-banner-subtitle">
+      Let’s chat and see how we can help</h2>
+    </div>
+    
+    <div class="end-banner-boxes-container">
+      <div class="telegram-box">
+        <img src="icon/telegram.png" alt="telegram-png">
+        <div class="text-content">
+          <h2 class="telegram-text">Telegram</h2>
+          <h3 class="telegram-subtext">@superdao_team</h3>
+        </div>
+      </div>
+
+      <div class="email-box">
+        <img src="icon/email.png" alt="email-png">
+        <div class="text-content">
+          <h2 class="email-box-text">Email</h2>
+          <h3 class="email-subtext">hello@superdao.co</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="post-container">
+    <h2>Send a post Goose</h2>
+
+    <div class="form-inputs">
+      <input type="email" placeholder="Your email" required>
+      <input type="text" placeholder="Your name" required>
+      <textarea rows="5" placeholder="Your message"></textarea>
+      <select required>
+        <option value="" disabled selected>Color of your goose</option>
+        <option>Red</option>
+        <option>White</option>
+        <option>Blue</option>
+        <option>Black</option>
+      </select>
+    </div>
+
+    <div class="send-container">
+      <button type="submit" class="send-btn">Send</button>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-text-container">
+      <nav class="nav">
+        <ul>
+          <li><a href="About index.html">About</a></li>
+          <li><a href="Figma index.html">jobs</a></li>
+          <li><a href="Figma index.html" class="legal">Legal</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="footer-icons">
+      <img src="icon\twitter-icon.png" alt="twitter-icon">
+      <img src="icon\telegram-icon.png" alt="telegram-icon">
+      <img src="icon\youtube-icon.png" alt="youtube-icon">
+      <img src="icon\discord-icon.png" alt="discord-icon">
+    </div>
+  </div> 
+</footer>
 </html>
