@@ -326,7 +326,7 @@ body {
 }
 
 /*past dit aan*/
-.werkt-mee-container {
+.works-with-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
